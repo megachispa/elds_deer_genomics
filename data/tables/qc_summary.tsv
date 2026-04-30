@@ -1,0 +1,4 @@
+Dataset	SNPs	Mean_DP	Multiallelic
+Raw_VCF_normalized	12360761	119.3	0
+GQ20_filtered	4935569	133.9	0
+GQ50_filtered	454149	151.2	0

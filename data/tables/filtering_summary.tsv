@@ -1,0 +1,4 @@
+Dataset	FILTER_status	SNP_count
+Raw_VCF	.	15367235
+GQ20_filtered	PASS	4935569
+GQ50_filtered	PASS	454149
