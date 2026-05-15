@@ -3,6 +3,7 @@ GATK vs DeepVariant VCF Comparison Pipeline
 This module contains scripts for comparative analysis of variant call sets generated using two independent variant calling pipelines:
 * Genome Analysis Toolkit (GATK)
 * DeepVariant
+
 The goal of this workflow is to evaluate concordance between pipelines and quantify shared and caller-specific variants before and after filtering.
 
 Workflow Overview
