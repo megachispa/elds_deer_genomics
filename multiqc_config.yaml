@@ -1,0 +1,7 @@
+report_title: "VCF Filtering QC Report"
+
+sample_names_replace:
+  01_raw: "Raw VCF"
+  02_site_filtered: "Site-filtered (PASS)"
+  03_GQ20_biallelic: "GQ ≥ 20 (biallelic)"
+  04_GQ50_biallelic: "GQ ≥ 50 (biallelic)"

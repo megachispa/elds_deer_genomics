@@ -1,0 +1,4 @@
+FILE	SNPS	MEAN_DP	MULTIALLELIC
+norm.vcf.gz	12360761	119.348	0
+snps_PASS_geno20Filtered.vcf.gz	4935569	133.949	0
+snps_PASS_geno50Filtered.vcf.gz	454149	151.162	0
