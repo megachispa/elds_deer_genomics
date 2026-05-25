@@ -13,9 +13,6 @@ cd "$WORKDIR" || exit 1
 source /nfs/home/ebarabanova/miniconda3_new/etc/profile.d/conda.sh
 conda activate vcf_clean
 
-# Input annotation
-GFF=/mnt/tank/scratch/ebarabanova/annotation/gemoma_output/final_annotation.gff
-
 # Detect genes overlapping the top 10 ROH islands
 
 bedtools intersect \
