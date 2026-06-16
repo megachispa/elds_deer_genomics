@@ -1,51 +1,45 @@
-# VCF QC and Filtering Pipeline
+# Conservation Genomics of Siamese Eld's Deer
 
-## Overview
+This repository contains scripts used for the analysis of whole-genome sequencing data from a captive population of Siamese Eld's deer (*Rucervus eldii siamensis*).
 
-This project performs variant calling quality control (QC) and filtering on whole-genome sequencing data. The pipeline starts from raw BAM files and produces high-confidence SNP datasets through a combination of GATK and bcftools filtering steps.
+## Project goals
 
----
+- Assess genetic diversity
+- Characterize inbreeding using runs of homozygosity (ROH)
+- Evaluate relatedness among individuals
+- Identify putatively deleterious variants common for the population
 
 ## Workflow
 
-### 1. Raw variant generation
-- GATK HaplotypeCaller used to generate per-sample GVCF files
-- GVCFs combined using GATK CombineGVCFs
-- Joint genotyping performed to produce a raw VCF dataset
+### 00_prerequisites
+Preparation of software environments and reference resources.
 
-### 2. Variant filtering
-- Site-level hard filtering using GATK VariantFiltration
-- Removal of low-quality and multiallelic sites
-- Retention of PASS-only biallelic SNPs
+### 01_preprocessing
+Quality control, contamination screening, read alignment, duplicate marking, and alignment quality assessment.
 
-### 3. Genotype-level filtering
-- Filtering based on:
-  - Depth (DP < 10 removed)
-  - Genotype quality (GQ < 20 or GQ < 50 removed)
-- Two filtered datasets generated:
-  - GQ20 dataset (moderate stringency)
-  - GQ50 dataset (high stringency)
+### 02_vcf_processing
+Variant calling, genotyping, and variant filtering.
 
----
+### 03_population_genomics
+Population genetic analyses including heterozygosity, nucleotide diversity, PCA, ADMIXTURE, and private allele analyses.
 
-## Quality control analysis
+### 04_roh_analysis
+Detection and characterization of runs of homozygosity.
 
-The following QC metrics were computed:
+### 05_gene_annotation
+Functional annotation of variants and identification of candidate deleterious mutations.
 
-- SNP counts per sample
-- Mean genotype depth (DP)
-- FILTER field composition
-- Depth distribution across variants
+## Software
 
----
-
-## Key outputs
-
-- Raw VCF (joint genotyped)
-- GQ20 filtered VCF
-- GQ50 filtered VCF
-- QC summary tables
-- Per-sample DP estimates
-- DP distribution plots
-
+- FastQC
+- MultiQC
+- FastQ Screen
+- BWA
+- Samtools
+- Picard
+- GATK
+- VCFtools
+- PLINK
+- ADMIXTURE
+- SnpEff
 
