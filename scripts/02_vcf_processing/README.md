@@ -29,7 +29,7 @@ This directory contains scripts for variant calling, filtering, and quality cont
 
 | Script | Description |
 |--------|-------------|
-| `dp_4panel.slurm` | Visualization of depth distribution and VCF quality metrics |
+| `dp_4panel.slurm` | Visualization of depth distributions across raw and filtered VCF datasets |
 | `multiqc_vcf.slurm` | Aggregated QC reporting for VCF-level statistics |
 | `tables.slurm` | Generation of summary tables for variant statistics |
 
@@ -59,9 +59,7 @@ This directory contains scripts for variant calling, filtering, and quality cont
 
 - GATK  
 - BCFtools / VCFtools  
-- PLINK  
-- MultiQC  
-- R / plotting utilities  
+- MultiQC   
 
 ---
 
