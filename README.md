@@ -11,7 +11,10 @@ This repository contains scripts used for the analysis of whole-genome sequencin
 
 ## Workflow
 
+![Genomics Pipeline](docs/pipeline.png)
+
 ### 00_prerequisites
+
 Preparation of software environments and reference resources.
 
 ### 01_preprocessing
