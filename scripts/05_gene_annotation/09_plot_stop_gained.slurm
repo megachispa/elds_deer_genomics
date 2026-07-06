@@ -14,4 +14,4 @@ conda activate vcf_clean
 cd /mnt/tank/scratch/ebarabanova/var_in_genes
 
 # Run R script
-Rscript /mnt/tank/scratch/ebarabanova/vcf_filtering_qc/elds_deer_genomics/scripts/05_gene_annotation/plot_stop_gained.R
+Rscript /mnt/tank/scratch/ebarabanova/vcf_filtering_qc/elds_deer_genomics/scripts/05_gene_annotation/08_plot_stop_gained.R

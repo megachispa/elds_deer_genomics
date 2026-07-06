@@ -38,7 +38,7 @@ ggplot(counts,
         name = "In ROH?"         # legend title
     ) +
     labs(
-        x = "Number of homozygous ALT individuals",
+        x = "Number of individuals",
         y = "Number of stop-gained variants",
         title = "Sharing of homozygous stop-gained variants"
     ) +
